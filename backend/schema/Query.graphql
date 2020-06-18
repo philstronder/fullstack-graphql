@@ -1,0 +1,11 @@
+# API entry points
+type Query {
+    getLogin(data: UserLoginInput!): String
+    login(data: UserLoginInput!): User
+    users: [User]
+    user(filter: UserFilter!): User
+    profiles: [Profile]
+    profile(filter: ProfileFilter!): Profile
+    brands: [Brand]
+    brand(filter: BrandFilter!): Brand
+}
