@@ -45,4 +45,18 @@ type Mutation {
         data: BrandInput!
     ): Brand
 
+    #Category mutations
+    newCategory(
+        data: CategoryInput!
+    ): Category
+
+    deleteCategory(
+        filter: CategoryFilter!
+    ): Category
+
+    updateCategory(
+        filter: CategoryFilter!
+        data: CategoryInput!
+    ): Category
+
 }
