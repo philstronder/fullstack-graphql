@@ -22,7 +22,7 @@ module.exports = {
     },
     users(parent, args, ctx) {
         ctx && ctx.validateAdmin()
-
+        
         return db('users')
     },
     user(_, { filter }, ctx) {
